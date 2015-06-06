@@ -91,6 +91,56 @@ Three custom interpolation values are supported in test case files.
  - $(outsubdir) will be replaced by current test case output
         sub-directory
 
+###Summary Report
+
+The test case runs two tests of the Linux **ls** command which yields the
+following summary report.
+
+    2015-06-06 00:00:00:       INFO: ========================================
+    2015-06-06 00:00:00:       INFO:   TEST SET: ls test case
+    2015-06-06 00:00:00:       INFO: EXECUTABLE: ls
+    2015-06-06 00:00:00:       INFO: OUTPUT DIR: output
+    2015-06-06 00:00:00:       INFO:    CASE #1: testcase.json
+    2015-06-06 00:00:00:       INFO: ----------------------------------------
+    2015-06-06 00:00:00:       INFO: Running CASE # 1
+    2015-06-06 00:00:00:       INFO:       TEST CASE: testcase.json
+    2015-06-06 00:00:00:       INFO:     DESCRIPTION: Testing ls -ltrh from test case
+    2015-06-06 00:00:00:       INFO:       OUTSUBDIR: 20150606_000000/testcase
+    2015-06-06 00:00:00:       INFO:        LOG FILE: testcase.log
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #0: -l 
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #1: -t 
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #2: -r 
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #3: -h 
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #4: output 
+    2015-06-06 00:00:00:       INFO: Test Case elapsed time (seconds): 0
+    2015-06-06 00:00:00:       INFO: Test Case return status: 0
+    2015-06-06 00:00:00:       INFO: ----------------------------------------
+    2015-06-06 00:00:00:       INFO: TOTAL NUMBER OF TESTS: 1
+    2015-06-06 00:00:00:       INFO: TOTAL NUMBER OF PASS: 1
+    2015-06-06 00:00:00:       INFO: TOTAL NUMBER OF FAIL: 0
+    2015-06-06 00:00:00:       INFO: ========================================
+    2015-06-06 00:00:00:       INFO:   TEST SET: ls test directory
+    2015-06-06 00:00:00:       INFO: EXECUTABLE: ls
+    2015-06-06 00:00:00:       INFO: OUTPUT DIR: output
+    2015-06-06 00:00:00:       INFO:    CASE #1: ./testdir\testdir.json
+    2015-06-06 00:00:00:       INFO: ----------------------------------------
+    2015-06-06 00:00:00:       INFO: Running CASE # 1
+    2015-06-06 00:00:00:       INFO:       TEST CASE: ./testdir\testdir.json
+    2015-06-06 00:00:00:       INFO:     DESCRIPTION: Testing ls -ltrh from test directory
+    2015-06-06 00:00:00:       INFO:       OUTSUBDIR: 20150606_000000/testdir
+    2015-06-06 00:00:00:       INFO:        LOG FILE: testdir.log
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #0: -l 
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #1: -t 
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #2: -r 
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #3: -h 
+    2015-06-06 00:00:00:       INFO:     ARGUMENT #4: output 
+    2015-06-06 00:00:00:       INFO: Test Case elapsed time (seconds): 0
+    2015-06-06 00:00:00:       INFO: Test Case return status: 0
+    2015-06-06 00:00:00:       INFO: ----------------------------------------
+    2015-06-06 00:00:00:       INFO: TOTAL NUMBER OF TESTS: 1
+    2015-06-06 00:00:00:       INFO: TOTAL NUMBER OF PASS: 1
+    2015-06-06 00:00:00:       INFO: TOTAL NUMBER OF FAIL: 0
+
 USAGE
 ================================================================================
 
