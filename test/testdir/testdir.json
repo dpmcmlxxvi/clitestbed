@@ -1,0 +1,14 @@
+{
+    "TEST": {
+        "DESCRIPTION": "Testing ls -ltrh from test directory",
+        "OUTSUBDIR": "$(datetime)/testdir",
+        "LOGFILE": "testdir.log"
+    },
+    "ARGUMENTS": {
+        "-l": "",
+        "-t": "",
+        "-r": "",
+        "-h": "",
+        "$(outdir)": ""
+    }
+}

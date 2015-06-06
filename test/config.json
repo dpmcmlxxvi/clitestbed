@@ -1,0 +1,16 @@
+{
+    "ls test case": {
+        "EXECUTABLE": "ls",
+        "TESTCASES": ["testcase.json"],
+        "OUTDIR": "output",
+        "LOGFILE": "config.log",
+        "LOGLEVEL": "DEBUG"
+    },
+    "ls test directory": {
+        "EXECUTABLE": "ls",
+        "TESTDIR": "./testdir",
+        "OUTDIR": "output",
+        "LOGFILE": "config.log",
+        "LOGLEVEL": "DEBUG"
+    }
+}
