@@ -506,7 +506,8 @@ class TestCase:
                                            stdout=testLogHandle.getHandle(),
                                            stderr=testLogHandle.getHandle(),
                                            env=environment,
-                                           cwd=exedir)
+                                           cwd=exedir,
+                                           shell=True)
                 status = process.wait()
 
             except Exception, e:
@@ -705,7 +706,7 @@ class TestSet:
         if self.pathdirs is not None:
             self.environment = os.environ.copy()
             for pathdir in self.pathdirs:
-                self.environment["PATH"] = (os.path.normpath(pathdir) +
+                self.environment["PATH"] = (os.path.normpath(str(pathdir)) +
                                             os.pathsep +
                                             self.environment["PATH"])
 
@@ -846,7 +847,7 @@ class TestSet:
         pathdirs = []
         if config.has_option(section, TestSet.PROP_GROUP_PATHDIRS):
             pathdir = config.parseOption(section, TestSet.PROP_GROUP_PATHDIRS)
-            pathdirs = pathdirs + pathdir.split('\n')
+            pathdirs = pathdirs + pathdir
 
         # Extract log file
         logFile = None
