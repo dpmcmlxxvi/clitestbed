@@ -7,7 +7,7 @@ The Test Bed runs a collection of Test Sets where each Test Set contains
 multiple Test Cases. Both the Test Sets and Test Cases are defined by JSON
 configuration files.
 
-###Test Set configuration file
+### Test Set configuration file
 
 The main test set configuration file is a JSON formatted file. It can have
 multiple sections, one for each Test Set. Sections can have custom
@@ -47,7 +47,7 @@ For example,
         }
     }
 
-###Test Case argument file
+### Test Case argument file
 
 The Test Case format has two sections **TEST** and **ARGUMENTS**. The
 **TEST** section has three properties:
@@ -82,7 +82,7 @@ following command line:
 
     app.exe -f -i in.txt -o out.txt -b file > C:/output/mycase/test1.log
 
-###Custom interpolation
+### Custom interpolation
 Three custom interpolation values are supported in test case files.
  - $(datetime) will be replaced by current date-time in the
         the format YYYYMMDD_HHMMSS
@@ -91,7 +91,7 @@ Three custom interpolation values are supported in test case files.
  - $(outsubdir) will be replaced by current test case output
         sub-directory
 
-###Summary Report
+### Summary Report
 
 The test case runs two tests of the Linux **ls** command which yields the
 following summary report.
